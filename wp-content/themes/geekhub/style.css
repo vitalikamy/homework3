@@ -480,9 +480,13 @@ body:not(.home) #header .nav li.current_page_item a  {
     border-top: 1px solid #D2DCE1;
     cursor: pointer;
 }
-#content .home ul.types li.left-col{
+#content .home ul.types li:nth-child(3n+1) {
     clear: both;
 }
+/* #content .home ul.types li.left-col{
+    clear: both;
+}
+*/
 #content .home ul.types li img {
     display:block;
     float:left;
@@ -518,11 +522,20 @@ body:not(.home) #header .nav li.current_page_item a  {
 #content .home ul.social_share {
     overflow:hidden;
 }
-#content .home ul.social_share > li {
+#content .home ul.social_share div.footer-widget {
     float:left;
     width:276px;
 }
-#content .home ul.social_share > li h4 {
+#content .home ul.social_share div:nth-of-type(2) {
+    overflow: hidden;
+    margin: 0 35px;
+}
+/*#content .home ul.social_share > li {
+    float:left;
+    width:276px;
+}
+*/
+#content .home ul.social_share li h4 {
     text-align:center;
     font-family: "Trebuchet MS";
     font-weight:normal;
@@ -551,19 +564,21 @@ body:not(.home) #header .nav li.current_page_item a  {
     background:url('images/sponsors.png') no-repeat;
 }
 
-#content .home ul.social_share > li.sertificates_list h4 {
+#content .home ul.social_share li.sertificates_list h4 {
     border:none;
     width:276px;
     height:214px;
     background:url('images/banner.png') no-repeat;
 }
 
-#content .home ul.social_share > li.sertificates_list {
+/*
+#content .home ul.social_share li.sertificates_list {
     overflow:hidden;
     margin:0 35px;
 }
+*/
 
-#content .home ul.social_share > li.sertificates_list h4 a {
+#content .home ul.social_share li.sertificates_list h4 a {
     display:block;
     width:276px;
     height:214px;
@@ -874,6 +889,12 @@ body:not(.home) #header .nav li.current_page_item a  {
 }
 #content .contacts dl ul li.tw a:hover {
     background-position: -132px -57px;
+}
+#popup {
+    font-weight:bold;
+    font-size: 12px;
+    color: #4d4d4d;
+
 }
 
 /*----------------------------------------------------------------------------------*/
@@ -1298,4 +1319,7 @@ body:not(.home) #header .nav li.current_page_item a  {
 }
 #content .details .register:active {
     background-position: 0 -112px;
+}
+#content h2.widget_title {
+    display:none;
 }

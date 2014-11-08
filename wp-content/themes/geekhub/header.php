@@ -6,18 +6,13 @@
     <meta name="description" content="GeekHub надає можливість отримати практичні знання та навички в сфері розробки програмного забезпечення">
     <meta name="keywords" content="GeekHub, ГікХаб, Черкаси, Cherkassy">
 
-
     <link href="<?php echo get_template_directory_uri(); ?>/style.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/flipclock.css">
-
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.6.4.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/libs/prefixfree.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/flipclock.min.js"></script>
     <script type="text/javascript" src="http://userapi.com/js/api/openapi.js?34"></script>
 
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <?php wp_head(); ?>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/detail.js"></script>
 
 </head>
 <body <?php body_class(); ?>>

@@ -1,0 +1,2 @@
+Error log created
+2014-11-04 18:33:39: Could not save XML file -> Could not save marker XML file (/var/www/homework.local/wp-content/uploads/wp-google-maps/1markers.xml) for Map ID 1
